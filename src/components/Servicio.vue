@@ -5,19 +5,26 @@
         class="slick-carousel"
       >
         <div
-            v-for="image in images"
-            :key="image.id"
-        >
-            <b-card class="mr-2 ml-2">
-                    <b-img
-                        class="content_img"
-                        :src="image.url"
-                    />
-                    <div class="mt-3">
-                        <p class="content-img_title">{{image.title}}</p>
-                        <b-button href="#" variant="primary">Ver más</b-button>
-                    </div>
-            </b-card>
+          v-for="image in images"
+          :key="image.id"
+      >
+          <b-card class="mr-2 ml-2">
+            <b-img
+                class="content_img"
+                :src="image.url"
+            />
+            <div class="mt-3">
+              <p class="content-img_title">{{image.title}}</p>
+              <b-button variant="primary" v-b-modal="'myModal' + image.id">Ver más</b-button>
+            </div>
+          </b-card>
+          <div>
+            <b-modal :id="'myModal' + image.id" size="lg" title="Large Modal" centered >
+              <p>
+                {{ image.title }}
+              </p>
+            </b-modal>
+          </div>
         </div>
       </VueSlickCarousel>
     </div>
@@ -68,15 +75,21 @@ export default {
         ]
       },
       images: [
-            { id: 1, url: require('@/assets/images/servicios/servicios_1.png'), title: 'VENTAS DE ASCENSORES' },
-            { id: 2, url: require('@/assets/images/servicios/servicios_2.png'), title: 'INSTALACIÓN' },
-            { id: 3, url: require('@/assets/images/servicios/servicios_3.jpg'), title: 'MANTENIMIENTO' },
-            { id: 4, url: require('@/assets/images/servicios/servicios_4.jpg'), title: 'EMERGENCIA' },
-            { id: 5, url: require('@/assets/images/servicios/servicios_5.jpg'), title: 'REPARACIONES' },
-            { id: 6, url: require('@/assets/images/servicios/servicios_6.jpg'), title: 'MODERNIZACIÓN' },
-        ],
-
+        { id: 1, url: require('@/assets/images/servicios/servicios_1.png'), title: 'VENTAS DE ASCENSORES' },
+        { id: 2, url: require('@/assets/images/servicios/servicios_2.png'), title: 'INSTALACIÓN' },
+        { id: 3, url: require('@/assets/images/servicios/servicios_3.jpg'), title: 'MANTENIMIENTO' },
+        { id: 4, url: require('@/assets/images/servicios/servicios_4.jpg'), title: 'EMERGENCIA' },
+        { id: 5, url: require('@/assets/images/servicios/servicios_5.jpg'), title: 'REPARACIONES' },
+        { id: 6, url: require('@/assets/images/servicios/servicios_6.jpg'), title: 'MODERNIZACIÓN' },
+      ],
+      modalShow: true,
     }
+  },
+  methods: {
+    loadClientInfo(item) {
+        this.images = item;
+        this.$bvModal.show("modal-1")
+      },
   },
 }
 </script>
