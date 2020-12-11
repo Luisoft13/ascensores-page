@@ -7,7 +7,7 @@
         <div
           v-for="image in images"
           :key="image.id"
-      >
+        >
           <b-card class="mr-2 ml-2">
             <b-img
                 class="content_img"
@@ -15,18 +15,22 @@
             />
             <div class="mt-3">
               <p class="content-img_title">{{image.title}}</p>
-              <b-button variant="primary" v-b-modal="'myModal' + image.id">Ver más</b-button>
+              <b-button variant="primary" v-b-modal="'myModal' + image.id">Ver más {{image.id}}</b-button>
             </div>
           </b-card>
-          <div>
-            <b-modal :id="'myModal' + image.id" size="lg" title="Large Modal" centered >
-              <p>
-                {{ image.title }}
-              </p>
-            </b-modal>
-          </div>
         </div>
       </VueSlickCarousel>
+      <div
+        v-for="image in images"
+        :key="image.id"
+      >
+          <b-modal :id="'myModal' + image.id" size="lg" title="Large Modal" centered >
+            <p>
+              {{ image.id}}
+              {{ image.title }}
+            </p>
+          </b-modal>
+      </div>
     </div>
 </template>
 <script>
