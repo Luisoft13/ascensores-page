@@ -42,6 +42,8 @@
                 variant="success"
                 size="sm"
                 class="float-right mr-2 content-btn"
+                href="https://api.whatsapp.com/send?phone=51 917937843&text=Hola *ASCENSORES PACIFIC S.A.C*, deseo más información acerca de este servicio."
+                target="_blank"
                 @click="close()"
               >
                 Cotizar
