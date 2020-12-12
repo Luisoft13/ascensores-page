@@ -5,6 +5,7 @@
     <Nosotros/>
     <Servicio/>
     <Products/>
+    <Form/>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import NavBar from '@/components/Navbar.vue'
 import Nosotros from '@/components/Nosotros.vue'
 import Servicio from '@/components/Servicio.vue'
 import Products from '@/components/Products.vue'
+import Form from '@/components/ContactForm.vue'
 
 export default {
   name: 'App',
@@ -22,7 +24,8 @@ export default {
     NavBar,
     Nosotros,
     Servicio,
-    Products
+    Products,
+    Form
   }
 }
 </script>
