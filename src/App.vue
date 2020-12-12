@@ -4,6 +4,7 @@
     <Inicio/>
     <Nosotros/>
     <Servicio/>
+    <Products/>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import Inicio from './components/Inicio.vue'
 import NavBar from '@/components/Navbar.vue'
 import Nosotros from '@/components/Nosotros.vue'
 import Servicio from '@/components/Servicio.vue'
+import Products from '@/components/Products.vue'
 
 export default {
   name: 'App',
@@ -19,7 +21,8 @@ export default {
     Inicio,
     NavBar,
     Nosotros,
-    Servicio
+    Servicio,
+    Products
   }
 }
 </script>

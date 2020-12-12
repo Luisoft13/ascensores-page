@@ -1,37 +1,66 @@
 <template>
-<div class="container">
+  <section id="servicio" class="content_servicios">
+  <div class="container">
+    <h2 class="content-title-section">Servicios</h2>
     <VueSlickCarousel
-        v-bind="slickSettings"
-        class="slick-carousel"
-      >
-        <div
-          v-for="image in images"
-          :key="image.id"
-        >
-          <b-card class="mr-2 ml-2">
-            <b-img
-                class="content_img"
-                :src="image.url"
-            />
-            <div class="mt-3">
-              <p class="content-img_title">{{image.title}}</p>
-              <b-button variant="primary" v-b-modal="'myModal' + image.id">Ver más {{image.id}}</b-button>
-            </div>
-          </b-card>
-        </div>
-      </VueSlickCarousel>
+      v-bind="slickSettings"
+      class="slick-carousel"
+    >
       <div
         v-for="image in images"
         :key="image.id"
       >
-          <b-modal :id="'myModal' + image.id" size="lg" title="Large Modal" centered >
+        <b-card class="mr-2 ml-2">
+          <b-img
+              class="content_img"
+              :src="image.url"
+          />
+          <div class="mt-3">
+            <p class="content-img_title">{{image.title}}</p>
+            <b-button class="content-btn_card" v-b-modal="'myModal' + image.id" ref="btnShow">Ver más</b-button>
+          </div>
+        </b-card>
+      </div>
+    </VueSlickCarousel>
+    <div
+      v-for="image in images"
+      :key="image.id"
+    >
+        <b-modal :id="'myModal' + image.id" size="lg" hide-backdrop :title="image.title" centered>
+          <div class="text-center">
             <p>
-              {{ image.id}}
-              {{ image.title }}
+              {{ image.description }}
             </p>
-          </b-modal>
+            <b-img
+              class="content-modal_image"
+              :src="image.url"
+            />
+          </div>
+          <template #modal-footer="{ close }">
+            <div class="w-100">
+              <b-button
+                variant="success"
+                size="sm"
+                class="float-right mr-2 content-btn"
+                @click="close()"
+              >
+                Cotizar
+                <img class="content-modal_icon" src="https://img.icons8.com/pastel-glyph/64/ffffff/whatsapp--v2.png"/>
+              </b-button>
+              <b-button
+                variant="secondary"
+                size="sm"
+                class="float-right mr-2 content-btn"
+                @click="close()"
+              >
+                Close
+              </b-button>
+            </div>
+          </template>
+        </b-modal>
       </div>
     </div>
+  </section>
 </template>
 <script>
 import VueSlickCarousel from 'vue-slick-carousel'
@@ -47,7 +76,6 @@ export default {
         dots: false,
         arrows:false,
         infinite: true,
-        speed:250,
         slidesToShow: 3,
         slidesToScroll: 3,
         initialSlide:0,
@@ -79,30 +107,82 @@ export default {
         ]
       },
       images: [
-        { id: 1, url: require('@/assets/images/servicios/servicios_1.png'), title: 'VENTAS DE ASCENSORES' },
-        { id: 2, url: require('@/assets/images/servicios/servicios_2.png'), title: 'INSTALACIÓN' },
-        { id: 3, url: require('@/assets/images/servicios/servicios_3.jpg'), title: 'MANTENIMIENTO' },
-        { id: 4, url: require('@/assets/images/servicios/servicios_4.jpg'), title: 'EMERGENCIA' },
-        { id: 5, url: require('@/assets/images/servicios/servicios_5.jpg'), title: 'REPARACIONES' },
-        { id: 6, url: require('@/assets/images/servicios/servicios_6.jpg'), title: 'MODERNIZACIÓN' },
+        { id: 1, url: require('@/assets/images/servicios/servicios_1.png'), title: 'VENTAS DE ASCENSORES',
+          description:"Nuestro personal está capacitado para realizar las instalaciones mecánicas y electrónicas hasta que su equipo quede funcionando y cumpliendo rigurosamente los estándares de seguridad y calidad."
+        },
+        { id: 2, url: require('@/assets/images/servicios/servicios_2.png'), title: 'INSTALACIÓN',
+          description:"Nuestro personal está capacitado para realizar las instalaciones mecánicas y electrónicas hasta que su equipo quede funcionando y cumpliendo rigurosamente los estándares de seguridad y calidad."
+        },
+        { id: 3, url: require('@/assets/images/servicios/servicios_3.jpg'), title: 'MANTENIMIENTO',
+          description:"Nuestro personal está capacitado para realizar las instalaciones mecánicas y electrónicas hasta que su equipo quede funcionando y cumpliendo rigurosamente los estándares de seguridad y calidad."
+        },
+        { id: 4, url: require('@/assets/images/servicios/servicios_4.jpg'), title: 'EMERGENCIA',
+          description:"Nuestro personal está capacitado para realizar las instalaciones mecánicas y electrónicas hasta que su equipo quede funcionando y cumpliendo rigurosamente los estándares de seguridad y calidad."
+        },
+        { id: 5, url: require('@/assets/images/servicios/servicios_5.jpg'), title: 'REPARACIONES',
+          description:"Nuestro personal está capacitado para realizar las instalaciones mecánicas y electrónicas hasta que su equipo quede funcionando y cumpliendo rigurosamente los estándares de seguridad y calidad."
+        },
+        { id: 6, url: require('@/assets/images/servicios/servicios_6.jpg'), title: 'MODERNIZACIÓN',
+          description:"Nuestro personal está capacitado para realizar las instalaciones mecánicas y electrónicas hasta que su equipo quede funcionando y cumpliendo rigurosamente los estándares de seguridad y calidad."
+        },
       ],
-      modalShow: true,
+      show: false,
     }
-  },
-  methods: {
-    loadClientInfo(item) {
-        this.images = item;
-        this.$bvModal.show("modal-1")
-      },
   },
 }
 </script>
 <style>
+.content_servicios {
+  padding: 120px 0;
+  background: #e3e8ee;
+}
+.content-title-section {
+  font-size: 70px;
+  padding-top: 20px;
+  margin-bottom: 50px;
+  font-family: 'MyriadPro';
+  color: #445b69;
+  text-transform: uppercase;
+}
 .content_img {
     height: 250px !important;
     width: 100%;
 }
+.content-modal_image {
+  width: 75%;
+  height: 300px;
+}
 .content-img_title {
     font-size: 23px;
+    font-weight: bold;
+    color:#445b69;
+    font-family: 'MyriadPro-Regular';
+}
+.modal-header {
+  color: white;
+  background-color: #4d8683 !important;
+}
+.close {
+  color: white !important;
+}
+.content-btn {
+  font-size: 20px !important;
+  border-radius: 10px !important;
+}
+.content-btn_card {
+  color: white;
+  background: #4d8683 !important;
+  font-size: 20px;
+}
+.content-modal_icon {
+  height: 25px;
+  width: 25px;
+}
+@media (max-width: 768px) {
+  .content-modal_image {
+    width: 75%;
+    height: 250px;
+  }
+  h2 {font-size:50px !important; align-items: center !important;}
 }
 </style>

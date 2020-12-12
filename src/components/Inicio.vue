@@ -111,6 +111,17 @@
   margin: 20px 5px 0 auto;
   text-align: right;
 }
+.carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 8px;
+    background-color: white;
+}
+.carousel-indicators .active
+{
+    background-color:rgba(42, 209, 201, 0.4)!important;
+}
 @media (max-width: 768px) {
   .carousel-inner img {
       height: 100vh;
