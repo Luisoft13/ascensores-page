@@ -5,7 +5,10 @@
     <Nosotros/>
     <Servicio/>
     <Products/>
+    <Proovedores/>
     <Form/>
+    <Footer/>
+    <Whatsapp/>
   </div>
 </template>
 
@@ -16,6 +19,10 @@ import Nosotros from '@/components/Nosotros.vue'
 import Servicio from '@/components/Servicio.vue'
 import Products from '@/components/Products.vue'
 import Form from '@/components/ContactForm.vue'
+import Footer from '@/components/Footer.vue'
+import Proovedores from '@/components/Proovedores.vue'
+import Whatsapp from '@/components/Whatsapp.vue'
+
 
 export default {
   name: 'App',
@@ -25,7 +32,10 @@ export default {
     Nosotros,
     Servicio,
     Products,
-    Form
+    Form,
+    Footer,
+    Proovedores,
+    Whatsapp
   }
 }
 </script>

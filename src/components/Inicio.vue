@@ -17,7 +17,7 @@
           class="content_slider"
           width="1024"
           height="480"
-          :src="require('@/assets/images/Inicio/slider-1.jpg')"
+          :src="require('@/assets/images/Inicio/slider-1.png')"
           alt="image slot"
         >
         <div class="carousel-caption">
@@ -37,7 +37,7 @@
           class="content_slider"
           width="1024"
           height="480"
-          :src="require('@/assets/images/Inicio/slider-2.jpg')"
+          :src="require('@/assets/images/Inicio/slider-2.png')"
           alt="image slot"
         >
         <div class="carousel-caption">
@@ -54,7 +54,7 @@
           class="content_slider"
           width="1024"
           height="480"
-          :src="require('@/assets/images/Inicio/slider-3.jpg')"
+          :src="require('@/assets/images/Inicio/slider-3.png')"
           alt="image slot"
         >
         <div class="carousel-caption mb-25">
@@ -112,11 +112,13 @@
   text-align: right;
 }
 .carousel-indicators li {
-    width: 15px;
-    height: 15px;
+    width: 20px !important;
+    height: 20px !important;
+    margin-right: 10px !important;
+    margin-left: 10px !important;
     border-radius: 50%;
-    margin: 0 8px;
-    background-color: white;
+    opacity: 1 !important;
+    background-color: white !important;
 }
 .carousel-indicators .active
 {

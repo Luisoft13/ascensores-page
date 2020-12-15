@@ -16,7 +16,7 @@
           </p>
           <div class="row content_first align-items-center">
             <div class="col-md-6  col-sm-12 content-img">
-              <img class="content-img-mision" :src="require('@/assets/images/Nosotros/mision.jpg')" alt="">
+              <img class="content-img-mision" :src="require('@/assets/images/Nosotros/mision.png')" alt="">
             </div>
             <div class="col-md-6 col-sm-12">
               <p class="content-title-vision-mision" style="text-transform: uppercase;">1.Misión</p>
@@ -36,7 +36,7 @@
               </p>
             </div>
             <div class="col-md-6 content-img">
-              <img class="content-img-mision" :src="require('@/assets/images/Nosotros/vision.jpg')" alt="">
+              <img class="content-img-mision" :src="require('@/assets/images/Nosotros/vision.png')" alt="">
             </div>
           </div>
         </div>

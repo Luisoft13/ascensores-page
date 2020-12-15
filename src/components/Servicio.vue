@@ -50,12 +50,11 @@
                 <img class="content-modal_icon" src="https://img.icons8.com/pastel-glyph/64/ffffff/whatsapp--v2.png"/>
               </b-button>
               <b-button
-                variant="secondary"
                 size="sm"
-                class="float-right mr-2 content-btn"
+                class="float-right mr-2 content-btn-cancel"
                 @click="close()"
               >
-                Close
+                Cancelar
               </b-button>
             </div>
           </template>
@@ -115,17 +114,17 @@ export default {
         { id: 2, url: require('@/assets/images/servicios/servicios_2.png'), title: 'INSTALACIÓN',
           description:"Nuestro personal está capacitado para realizar las instalaciones mecánicas y electrónicas hasta que su equipo quede funcionando y cumpliendo rigurosamente los estándares de seguridad y calidad."
         },
-        { id: 3, url: require('@/assets/images/servicios/servicios_3.jpg'), title: 'MANTENIMIENTO',
-          description:"Nuestro personal está capacitado para realizar las instalaciones mecánicas y electrónicas hasta que su equipo quede funcionando y cumpliendo rigurosamente los estándares de seguridad y calidad."
+        { id: 3, url: require('@/assets/images/servicios/servicios_3.png'), title: 'MANTENIMIENTO',
+          description:"Ejecutamos mensualmente mantenimientos preventivos con técnicos especializados, cumpliendo con los estándares de calidad realizamos la inspección personalizada de todos los sistemas de seguridad y verificación de cada componente electrónico y mecánico, maximizando la vida útil del ascensor y evitando interrupciones para así lograr el óptimo funcionamiento del mismo."
         },
-        { id: 4, url: require('@/assets/images/servicios/servicios_4.jpg'), title: 'EMERGENCIA',
-          description:"Nuestro personal está capacitado para realizar las instalaciones mecánicas y electrónicas hasta que su equipo quede funcionando y cumpliendo rigurosamente los estándares de seguridad y calidad."
+        { id: 4, url: require('@/assets/images/servicios/servicios_4.png'), title: 'EMERGENCIA',
+          description:"Nuestros técnicos están constantemente capacitados y acuden con rapidez cuando reciben un aviso de emergencia y resuelven cualquier incidente eficazmente para que su ascensor vuelva a funcionar óptimamente lo antes posible."
         },
-        { id: 5, url: require('@/assets/images/servicios/servicios_5.jpg'), title: 'REPARACIONES',
-          description:"Nuestro personal está capacitado para realizar las instalaciones mecánicas y electrónicas hasta que su equipo quede funcionando y cumpliendo rigurosamente los estándares de seguridad y calidad."
+        { id: 5, url: require('@/assets/images/servicios/servicios_5.png'), title: 'REPARACIONES',
+          description:"Contamos con personal capacitado para identificar fallas y averías, en la cual cumpliendo los estándares de calidad, podemos determinar y brindar una solución acertada a las paralizaciones que puede presentar el equipo, para ellos contamos con stock de repuestos originales y herramientas adecuadas para garantizar un correcto funcionamiento."
         },
-        { id: 6, url: require('@/assets/images/servicios/servicios_6.jpg'), title: 'MODERNIZACIÓN',
-          description:"Nuestro personal está capacitado para realizar las instalaciones mecánicas y electrónicas hasta que su equipo quede funcionando y cumpliendo rigurosamente los estándares de seguridad y calidad."
+        { id: 6, url: require('@/assets/images/servicios/servicios_6.png'), title: 'MODERNIZACIÓN',
+          description:"Modernizamos la tecnología de su ascensor mejorando el confort y aumentando la seguridad del equipo, debido al desgaste de algunas tecnologías y componentes que conllevan a la modernización de un ascensor, los cuales nos llevan a ofrecer un amplio abanico de modernizaciones y mejores estándares tecnológicos. (Web) "
         },
       ],
       show: false,
@@ -142,7 +141,6 @@ export default {
   font-size: 70px;
   padding-top: 20px;
   margin-bottom: 50px;
-  font-family: 'MyriadPro';
   color: #445b69;
   text-transform: uppercase;
 }
@@ -170,11 +168,20 @@ export default {
 .content-btn {
   font-size: 20px !important;
   border-radius: 10px !important;
+  cursor: pointer !important;
+}
+.content-btn-cancel {
+  background: white !important;
+  color: black !important;
+  font-size: 20px !important;
+  border-radius: 10px !important;
+  cursor: pointer !important;
 }
 .content-btn_card {
   color: white;
   background: #4d8683 !important;
-  font-size: 20px;
+  font-size: 25px;
+  cursor: pointer !important;
 }
 .content-modal_icon {
   height: 25px;
@@ -183,7 +190,7 @@ export default {
 @media (max-width: 768px) {
   .content-modal_image {
     width: 75%;
-    height: 250px;
+    height: 150px;
   }
   h2 {font-size:50px !important; align-items: center !important;}
 }

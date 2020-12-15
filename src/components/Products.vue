@@ -6,7 +6,7 @@
           <div class="row">
             <div class="col-md-4">
                 <div class="products_item">
-                  <img :src="require('@/assets/images/productos/producto-1.jpg')" class="img-fluid rounded products_img">
+                  <img :src="require('@/assets/images/productos/producto-1.png')" class="img-fluid rounded products_img">
                   <div class="products_hover">
                     <h3 class="products_title">ASCENSOR DE PASAJEROS</h3>
                     <i class="fas fa-suitcase products_icon"></i>
@@ -15,7 +15,7 @@
             </div>
             <div class="col-md-4">
                 <div class="products_item">
-                  <img :src="require('@/assets/images/productos/producto-2.jpg')" class="img-fluid rounded products_img">
+                  <img :src="require('@/assets/images/productos/producto-2.png')" class="img-fluid rounded products_img">
                   <div class="products_hover">
                     <h3 class="products_title">ASCENSOR MONTACAMILLA</h3>
                     <i class="fas fa-suitcase products_icon"></i>
@@ -24,7 +24,7 @@
             </div>
             <div class="col-md-4 pb-10">
                 <div class="products_item">
-                  <img :src="require('@/assets/images/productos/producto-3.jpg')" class="img-fluid rounded products_img">
+                  <img :src="require('@/assets/images/productos/producto-3.png')" class="img-fluid rounded products_img">
                   <div class="products_hover">
                     <h3 class="products_title">ASCENSOR MONTACARGA</h3>
                     <i class="fas fa-suitcase products_icon"></i>
@@ -33,7 +33,7 @@
             </div>
             <div class="col-md-4 pb-10">
                 <div class="products_item">
-                  <img :src="require('@/assets/images/productos/producto-4.jpg')" class="img-fluid rounded products_img">
+                  <img :src="require('@/assets/images/productos/producto-4.png')" class="img-fluid rounded products_img">
                   <div class="products_hover">
                     <h3 class="products_title">ASCENSOR MONTAVEHÍCULO</h3>
                     <i class="fas fa-suitcase products_icon"></i>
@@ -42,7 +42,7 @@
             </div>
             <div class="col-md-4 pb-10">
                 <div class="products_item">
-                  <img :src="require('@/assets/images/productos/producto-5.jpg')" class="img-fluid rounded products_img">
+                  <img :src="require('@/assets/images/productos/producto-5.png')" class="img-fluid rounded products_img">
                   <div class="products_hover">
                     <h3 class="products_title">ASCENSOR DE MINUSVÁLIDOS</h3>
                     <i class="fas fa-suitcase products_icon"></i>
@@ -51,7 +51,7 @@
             </div>
             <div class="col-md-4 pb-10">
                 <div class="products_item">
-                  <img :src="require('@/assets/images/productos/producto-6.jpg')" class="img-fluid rounded products_img">
+                  <img :src="require('@/assets/images/productos/producto-6.png')" class="img-fluid rounded products_img">
                   <div class="products_hover">
                     <h3 class="products_title">TABLEROS DE CONTROL O CUADRO DE MANIOBRA</h3>
                     <i class="fas fa-suitcase products_icon"></i>
@@ -70,7 +70,6 @@
 .content-productos_title {
     font-size: 70px;
     color:#445b69;
-    font-family: 'MyriadPro-Regular';
     padding-top: 20px;
     margin-bottom: 50px;
 }
@@ -88,7 +87,7 @@
     left: 0;
     width: 100%;
     height: 83%;
-    color: var(--white-color);
+    color: white;
     text-align: center;
     display: flex;
     flex-direction: column;
