@@ -20,7 +20,7 @@
           :src="require('@/assets/images/Inicio/slider-1.png')"
           alt="image slot"
         >
-        <div class="carousel-caption">
+        <div class="carousel-caption content-carousel-1">
           <h1 class="mt-5">MODERNIZACION</h1>
           <div class="linea"></div>
           <p>Modernizamos la tecnología</p>
@@ -40,9 +40,10 @@
           :src="require('@/assets/images/Inicio/slider-2.png')"
           alt="image slot"
         >
-        <div class="carousel-caption">
-          <h1 class="mt-5">SOMOS ESPECIALISTAS</h1>
-          <div class="linea"></div>
+        <div class="carousel-caption content-carousel-2">
+          <p style="font-size:36px">SOMOS</p>
+          <h1>ESPECIALISTAS</h1>
+          <div class="linea-2"></div>
           <p>En instalación, mantenimiento</p>
           <p>y reparación</p>
         </div>
@@ -57,9 +58,12 @@
           :src="require('@/assets/images/Inicio/slider-3.png')"
           alt="image slot"
         >
-        <div class="carousel-caption mb-25">
-          <h1 class="mt-5">VENTAS DE ASCENSORES</h1>
-          <div class="linea"></div>
+        <div class="carousel-caption mb-25 content-carousel-3">
+          <p style="font-size:36px">VENTAS DE </p>
+            <h1>ASCENSORES</h1>
+            <div class="linea-3"></div>
+            <p>Contamos con ascensores</p>
+            <p>modernos y a un buen precio</p>
         </div>
       </template>
     </b-carousel-slide>
@@ -90,8 +94,19 @@
   width: 100%;
   filter: brightness(0.50);
 }
+.content-carousel-1 {
+  display: block !important;
+  text-align: right !important;
+}
+.content-carousel-2 {
+  display: block !important;
+  text-align: center !important;
+}
+.content-carousel-3 {
+  display: block !important;
+  text-align: left !important;
+}
 .carousel-caption h1{
-  text-align: right;
   font-size: 80px; font-weight: 700; line-height: 80px;
 }
 .carousel-caption{
@@ -100,7 +115,6 @@
 .carousel-caption p{
   color: white;
   font-size: 30px;
-  text-align: right;
   opacity: 1;
 }
 .linea {
@@ -109,7 +123,20 @@
   max-width: 250px;
   padding: 0;
   margin: 20px 5px 0 auto;
-  text-align: right;
+}
+.linea-2 {
+  border-top: 3px solid white;
+  height: 2px;
+  max-width: 250px;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.linea-3 {
+  border-top: 3px solid white;
+  height: 2px;
+  max-width: 250px;
+  padding: 0;
 }
 .carousel-indicators li {
     width: 20px !important;

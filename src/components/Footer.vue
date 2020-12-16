@@ -38,13 +38,13 @@
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
             <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
             <p>
-              <i class="fas fa-home mr-3"></i> Av. Los Vencedores Mz 22 lt 12 Marquez - Callao</p>
+              <b-img width="30px" :src="require('@/assets/direccion_icon.png')" alt=""></b-img> Av. Los Vencedores Mz 22 lt 12 Marquez - Callao</p>
             <p>
-              <i class="fas fa-envelope mr-3"></i> Josers@ascensorespacific.com</p>
+              <b-img width="30px" :src="require('@/assets/mail_icon.png')" alt=""></b-img>Josers@ascensorespacific.com</p>
             <p>
-              <i class="fas fa-phone mr-3"></i> +51 990 227 250</p>
+              <b-img width="30px" :src="require('@/assets/phone_icon.png')" alt=""></b-img>+51 990 227 250</p>
             <p>
-              <i class="fas fa-phone mr-3"></i> +51 942 849 275</p>
+              <b-img width="30px" :src="require('@/assets/phone_icon.png')" alt=""></b-img> +51 942 849 275</p>
           </div>
           <!-- Grid column -->
           <hr class="w-100 clearfix d-md-none">
@@ -55,7 +55,7 @@
             <div class="text-center">
               <h6 class="font-weight-bold text-uppercase mb-4">Siguenos en</h6>
               <a class="fb-ic" href="https://www.facebook.com/AscensoresPacific" target="_blank">
-                <i class="fab fa-facebook-f white-text"></i>
+                <b-img width="30px" :src="require('@/assets/facebook_icon.png')" alt=""></b-img>
                 <span class="ml-2">Ascensores Pacific S.A.C</span>
               </a>
               <!-- Twitter -->

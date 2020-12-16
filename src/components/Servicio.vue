@@ -84,8 +84,8 @@ export default {
           {
             breakpoint: 1024,
             settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
+              slidesToShow: 2,
+              slidesToScroll: 2,
               infinite: false,
               dots: false
             }
@@ -192,6 +192,10 @@ export default {
     width: 75%;
     height: 150px;
   }
-  h2 {font-size:50px !important; align-items: center !important;}
+  h2 {
+    font-size: 42px !important;
+    align-items: center !important;
+    font-weight: bold !important;
+  }
 }
 </style>

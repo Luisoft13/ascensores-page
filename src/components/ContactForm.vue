@@ -204,4 +204,10 @@ export default {
   }
   h2 {font-size:50px !important; align-items: center !important;}
 }
+@media (max-width: 1024px) {
+  .contact-image {
+    height: 100vh;
+  }
+}
+
 </style>
