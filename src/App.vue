@@ -1,12 +1,12 @@
 <template>
   <div id="app">
     <NavBar/>
-    <Inicio/>
-    <Nosotros/>
-    <Servicio/>
-    <Products/>
+    <Inicio id="inicio"/>
+    <Nosotros id="nosotros"/>
+    <Servicio id="service"/>
+    <Products id="products"/>
     <Proovedores/>
-    <Form/>
+    <Form id="contacto"/>
     <Footer/>
     <Whatsapp/>
   </div>
