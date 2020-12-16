@@ -17,7 +17,7 @@
           class="content_slider"
           width="1024"
           height="480"
-          :src="require('@/assets/images/Inicio/slider-1.png')"
+          :src="require('@/assets/images/Inicio/slider-1.jpg')"
           alt="image slot"
         >
         <div class="carousel-caption content-carousel-1">
@@ -37,7 +37,7 @@
           class="content_slider"
           width="1024"
           height="480"
-          :src="require('@/assets/images/Inicio/slider-2.png')"
+          :src="require('@/assets/images/Inicio/slider-2.jpg')"
           alt="image slot"
         >
         <div class="carousel-caption content-carousel-2">
@@ -55,7 +55,7 @@
           class="content_slider"
           width="1024"
           height="480"
-          :src="require('@/assets/images/Inicio/slider-3.png')"
+          :src="require('@/assets/images/Inicio/slider-3.jpg')"
           alt="image slot"
         >
         <div class="carousel-caption mb-25 content-carousel-3">

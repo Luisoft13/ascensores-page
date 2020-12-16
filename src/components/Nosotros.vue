@@ -23,7 +23,7 @@
           <div class="col-md-6 col-sm-12 content-img">
             <img
               class="content-img-mision"
-              :src="require('@/assets/images/Nosotros/mision.png')"
+              :src="require('@/assets/images/Nosotros/mision.jpg')"
               alt=""
             />
           </div>
@@ -60,7 +60,7 @@
           <div class="col-md-6 content-img">
             <img
               class="content-img-mision"
-              :src="require('@/assets/images/Nosotros/vision.png')"
+              :src="require('@/assets/images/Nosotros/vision.jpg')"
               alt=""
             />
           </div>

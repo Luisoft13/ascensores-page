@@ -108,22 +108,22 @@ export default {
         ]
       },
       images: [
-        { id: 1, url: require('@/assets/images/servicios/servicios_1.png'), title: 'VENTAS DE ASCENSORES',
+        { id: 1, url: require('@/assets/images/servicios/servicios_1.jpg'), title: 'VENTAS DE ASCENSORES',
           description:"Nuestro personal está capacitado para realizar las instalaciones mecánicas y electrónicas hasta que su equipo quede funcionando y cumpliendo rigurosamente los estándares de seguridad y calidad."
         },
-        { id: 2, url: require('@/assets/images/servicios/servicios_2.png'), title: 'INSTALACIÓN',
+        { id: 2, url: require('@/assets/images/servicios/servicios_2.jpg'), title: 'INSTALACIÓN',
           description:"Nuestro personal está capacitado para realizar las instalaciones mecánicas y electrónicas hasta que su equipo quede funcionando y cumpliendo rigurosamente los estándares de seguridad y calidad."
         },
-        { id: 3, url: require('@/assets/images/servicios/servicios_3.png'), title: 'MANTENIMIENTO',
+        { id: 3, url: require('@/assets/images/servicios/servicios_3.jpg'), title: 'MANTENIMIENTO',
           description:"Ejecutamos mensualmente mantenimientos preventivos con técnicos especializados, cumpliendo con los estándares de calidad realizamos la inspección personalizada de todos los sistemas de seguridad y verificación de cada componente electrónico y mecánico, maximizando la vida útil del ascensor y evitando interrupciones para así lograr el óptimo funcionamiento del mismo."
         },
-        { id: 4, url: require('@/assets/images/servicios/servicios_4.png'), title: 'EMERGENCIA',
+        { id: 4, url: require('@/assets/images/servicios/servicios_4.jpg'), title: 'EMERGENCIA',
           description:"Nuestros técnicos están constantemente capacitados y acuden con rapidez cuando reciben un aviso de emergencia y resuelven cualquier incidente eficazmente para que su ascensor vuelva a funcionar óptimamente lo antes posible."
         },
-        { id: 5, url: require('@/assets/images/servicios/servicios_5.png'), title: 'REPARACIONES',
+        { id: 5, url: require('@/assets/images/servicios/servicios_5.jpg'), title: 'REPARACIONES',
           description:"Contamos con personal capacitado para identificar fallas y averías, en la cual cumpliendo los estándares de calidad, podemos determinar y brindar una solución acertada a las paralizaciones que puede presentar el equipo, para ellos contamos con stock de repuestos originales y herramientas adecuadas para garantizar un correcto funcionamiento."
         },
-        { id: 6, url: require('@/assets/images/servicios/servicios_6.png'), title: 'MODERNIZACIÓN',
+        { id: 6, url: require('@/assets/images/servicios/servicios_6.jpg'), title: 'MODERNIZACIÓN',
           description:"Modernizamos la tecnología de su ascensor mejorando el confort y aumentando la seguridad del equipo, debido al desgaste de algunas tecnologías y componentes que conllevan a la modernización de un ascensor, los cuales nos llevan a ofrecer un amplio abanico de modernizaciones y mejores estándares tecnológicos. (Web) "
         },
       ],

@@ -97,7 +97,7 @@
           </div>
         </div>
         <div class="col-md-6 mt-4">
-          <img class="contact-image" :src="require('@/assets/images/contact/contacto_img.png')" alt="">
+          <img class="contact-image" :src="require('@/assets/images/contact/contacto_img.jpg')" alt="">
         </div>
       </div>
     </form>
