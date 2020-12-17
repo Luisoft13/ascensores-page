@@ -20,9 +20,6 @@
               class="nav-link"
               v-for="(link, index) in navLinks"
               :key="index"
-              :class=" { active: hover } "
-              @mouseover="hover = true"
-              @mouseleave="hover = false"
               @click="nav(link)"
             >
               {{link.text}}

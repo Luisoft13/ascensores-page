@@ -65,6 +65,17 @@
             />
           </div>
         </div>
+        <div class="mt-5">
+          <b-button
+            class="content-btn_brochure"
+            size="lg"
+            pill
+            href="./brochure-ascensores-pacific-sac.pdf"
+            target="_blank"
+          >
+            Ver Brochure Ascensores Pacific
+          </b-button>
+        </div>
       </div>
     </div>
   </section>
@@ -125,6 +136,12 @@ section {
 }
 .content-img:hover img {
   transform: scale(1.5);
+}
+.content-btn_brochure {
+  color: white;
+  background: #4d8683 !important;
+  font-size: 25px;
+  cursor: pointer !important;
 }
 @media (max-width: 1024px) {
   .logo-section-nosotros {
