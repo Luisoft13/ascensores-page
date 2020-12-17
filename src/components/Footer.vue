@@ -44,7 +44,7 @@
             <p>
               <b-img width="30px" :src="require('@/assets/phone_icon.png')" alt=""></b-img>+51 990 227 250</p>
             <p>
-              <b-img width="30px" :src="require('@/assets/phone_icon.png')" alt=""></b-img> +51 942 849 275</p>
+              <b-img width="30px" :src="require('@/assets/phone_icon.png')" alt=""></b-img> +51 917 937 843</p>
           </div>
           <!-- Grid column -->
           <hr class="w-100 clearfix d-md-none">
