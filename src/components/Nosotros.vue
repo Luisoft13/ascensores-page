@@ -73,7 +73,7 @@
             href="./brochure-ascensores-pacific-sac.pdf"
             target="_blank"
           >
-            Ver Brochure Ascensores Pacific
+            Ver Brochure
           </b-button>
         </div>
       </div>
@@ -169,6 +169,9 @@ section {
     font-size: 44px;
   }
   .content-text-vision-mision {
+    font-size: 18px;
+  }
+  .content-btn_brochure {
     font-size: 18px;
   }
 }
