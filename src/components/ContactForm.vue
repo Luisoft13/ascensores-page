@@ -106,7 +106,7 @@
 </template>
 <script>
 import emailjs from "emailjs-com";
-import EMAIL_VALID_REGEX from '@/components/form/regex.js'
+import {EMAIL_VALID_REGEX} from '@/components/form/regex.js'
 
 export default {
   data() {

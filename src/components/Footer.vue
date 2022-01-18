@@ -42,7 +42,7 @@
             <p>
               <b-img width="30px" :src="require('@/assets/mail_icon.png')" alt=""></b-img>Josers@ascensorespacific.com</p>
             <p>
-              <b-img width="30px" :src="require('@/assets/phone_icon.png')" alt=""></b-img>+51 990 227 250</p>
+              <b-img width="30px" :src="require('@/assets/phone_icon.png')" alt=""></b-img>+01 345 4073</p>
             <p>
               <b-img width="30px" :src="require('@/assets/phone_icon.png')" alt=""></b-img> +51 917 937 843</p>
           </div>
